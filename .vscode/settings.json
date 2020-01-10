@@ -3,5 +3,6 @@
         "node_modules{,/**}",
         ".vscode{,/**}"
     ],
-    "appService.deploySubpath": ""
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/5217ba6c-b8ee-4adf-a2b5-f79619544e98/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/wxapp12246"
 }
