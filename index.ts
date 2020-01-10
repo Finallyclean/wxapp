@@ -2,13 +2,13 @@ import * as express from "express";
 import * as request from "request";
 import sha1 = require("sha1");
 
-let app = express(); 
+let app = express();
 
 // Insert metadata
-let appId = 'wxf4363f9859dc66e4';             // Insert your appId
-let appsecret = 'dab4e3d9d6a590f0eae6ee5f881b496d';         // insert your appsecret
+let appId = '';             // Insert your appId
+let appsecret = '';         // insert your appsecret
 let url = '';               // insert host url, e.g. http://wxapp.azurewebsites.net/
-let nonceStr = 'hellotypescript';          // insert any string
+let nonceStr = '';          // insert any string
 
 // define an interface containing params for wx.config
 interface configObj {
@@ -25,7 +25,7 @@ function getWXConfig(cb) {
             let ticket = JSON.parse(body).ticket;
             let o: configObj = {
                 appId: appId,
-                nonceStr: nonceStr, 
+                nonceStr: nonceStr,
                 timestamp: new Date().getTime() / 1000 + '',
                 signature: ''
             };
